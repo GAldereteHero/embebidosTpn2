@@ -32,9 +32,9 @@
  * POSSIBILITY OF SUCH DAMAGE.
  */
 
-/** @file main.c
+/** @file 'alumno'.c
  **
- ** @brief Programa principal del trabajo practico n 2
+ ** @brief Archivo principal para alumno.c
  **
  ** Plantilla para los archivos de codigo fuente de prácticos de las 
  ** asignaturas Diseño Integrado de Sistemas Emebebidos y Sistemas Embebidos
@@ -51,9 +51,9 @@
  */
 
 /* === Inclusiones de cabeceras ============================================ */
-#include "main.h"
 #include "alumno.h"
 #include <stdio.h>
+
 
 /* === Definicion y Macros privados ======================================== */
 
@@ -69,17 +69,10 @@
 
 /* === Definiciones de funciones publicas ================================== */
 
-int main(void) {
+void nombre( const struct alumno_s * alumno){
+    printf("Nombre del alumno: %s, %s. \r\n", alumno->apellido, alumno->nombre);
+    printf("Documento del alumno: %s \r\n", alumno->documento);
 
-	static const struct alumno_s alumno = {
-		.apellido = "Alderete Hero",
-		.nombre = "Gonzalo",
-		.documento = "36.866.647"
-	};
-
-	nombre(&alumno);
-
-	return 0;
 }
 
 /* === Ciere de documentacion ============================================== */
