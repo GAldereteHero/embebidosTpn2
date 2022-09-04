@@ -44,11 +44,11 @@
  ** de Tiempo Real dictadas en de la Especialización en Integración de
  ** Sistemas Informaticos de la Univesidad Nacional de Tucumán
  ** 
- ** | RV | YYYY.MM.DD | Autor       | Descripción de los cambios              |
- ** |----|------------|-------------|-----------------------------------------|
- ** |  1 | 2022.08.27 | evolentini  | Version inicial del archivo             |
+ ** | RV | YYYY.MM.DD | Autor             | Descripción de los cambios              |
+ ** |----|------------|-------------------|-----------------------------------------|
+ ** |  1 | 2022.09.04 | G. Alderete Hero  | Version inicial del archivo             |
  ** 
- ** @defgroup plantilla Plantilals de Archivos
+ ** @defgroup plantilla Plantillas de Archivos
  ** @brief Plantillas de archivos normalizadas
  ** @{ 
  */
@@ -67,7 +67,11 @@ extern "C" {
 /* === Declaraciones de variables publicas ================================= */
 
 /* === Declaraciones de funciones publicas ================================= */
-
+ /**
+  * @brief Funcion principal de nuestro software embebido
+  * 
+  * @return int 
+  */
 int main(void);
 
 /* === Ciere de documentacion ============================================== */
